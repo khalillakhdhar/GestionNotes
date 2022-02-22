@@ -89,6 +89,21 @@ public class Etudiant {
   
     return somme/taille;
     }
+    public void decision()
+    {
+    if(this.moyenne()>=10)
+    {
+    this.setRemarque("réuissi");
+    }
+    else
+       this.setRemarque("redoublement");
+    
+    }
+
+    @Override
+    public String toString() {
+        return "Etudiant{" + "nom=" + nom + ", classe=" + classe + ", remarque=" + remarque +'}'+" moyenne= "+this.moyenne();
+    }
     
     
 }
