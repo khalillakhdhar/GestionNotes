@@ -15,6 +15,18 @@ public class Teste {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Etudiant e1=new Etudiant("e1", "test1");
+        e1.addNote(12);
+        e1.addNote(14);
+        e1.addNote(13);
+        e1.decision();
+        System.out.println(e1.toString());
+        Etudiant e2=new Etudiant("etudiant2", "classe2");
+          e2.addNote(2);
+        e2.addNote(4);
+        e2.addNote(8);
+        e2.decision();
+        System.err.println(e2.toString());
     }
     
 }
